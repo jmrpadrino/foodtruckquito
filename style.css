@@ -1,0 +1,62 @@
+/*
+Theme Name: Foodtruck Quito website theme
+Theme URI: http://choclomedia.com
+Author: The Choclomedia team
+Author URI: http://choclomedia.com
+Description: Foodtruck Quito website theme
+
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: foodtruckquito
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+#message-wrapper{
+    display: none;
+    margin-bottom: 15px;
+}
+#message-wrapper p{
+    margin: 0px;
+    padding: 15px;
+    border: 3px solid;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 800;
+}
+#message-wrapper .success{
+    display: block;
+    color: darkgreen;
+    border-color: forestgreen;
+}
+#message-wrapper .error{
+    display: block;
+    color: darkred;
+    border-color: darkred;
+}
+
+.cta-promos {
+  animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+     /* you could also use milliseconds (ms) or something like 2.5s */
+  -webkit-animation: colorchange 50s; /* Chrome and Safari */
+}
+
+@keyframes colorchange
+{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  75%  {background: green;}
+  100% {background: red;}
+}
